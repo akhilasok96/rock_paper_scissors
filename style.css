@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bakosapi;
+    src: url(./fonts/BaksoSapi.otf);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: bakosapi;
+    font-size: 40px;
+    color: darkviolet;
+}
+
+h3{
+    font-family: bakosapi;
+    font-size: 20px;
+    color: rgb(24, 178, 147);
+}
+
+.container{
+    width: 30%;
+    height: 70vh;
+    background-color: #C6F1F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid rgb(209, 51, 196);
+    border-radius: 8px;
+    box-shadow: 3px 4px 10px #cb9dce;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+
+.btn{
+    padding: 8px 10px;
+    font-family: bakosapi;
+    background-color: rgb(94, 241, 94);
+    border: 2px solid rgb(209, 51, 196);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    color: #fff;
+    padding: 8px 10px;
+    background-color: rgb(209, 51, 196);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.result-status{
+    font-family: bakosapi;
+    font-size: 18px;
+    color: darkviolet;
+}
+
+.won{
+    color: rgb(74, 180, 74);
+    font-size: 25px;
+}
+
+.lost{
+    color: rgb(210, 67, 24);
+    font-size: 25px;
+}
+
+.reset-btn{
+    padding: 8px 10px;
+    width: 55%;
+    font-family: bakosapi;
+    border: 2px solid rgb(74, 180, 74);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.reset-btn:hover{
+    transform: scale(1.05);
+    color: #fff;
+    padding: 8px 10px;
+    background-color: rgb(209, 51, 196);
+    border: 2px solid rgb(209, 51, 196);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.final-result{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
